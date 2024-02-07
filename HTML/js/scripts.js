@@ -1,4 +1,5 @@
 import {cart} from '../datasets/cart.js';
+import {products} from '../datasets/products.js';
 
 function openNav() {
   document.getElementById("myNav").style.height = "100%";

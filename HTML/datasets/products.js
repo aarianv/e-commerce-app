@@ -1,4 +1,4 @@
-const products = [{
+export const products = [{
     image: 'imgs/tabi-boots.jpg', name: 'maison  margiela  black  tabi  boots', rating: {
       stars: 4.5,
       count: 76,
