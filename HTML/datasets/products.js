@@ -16,4 +16,4 @@ export const products = [{
       count: 98
     }, type: 'new',
     pricePence: 29500
-  } ];
+  }];
