@@ -2,23 +2,28 @@
 <html>
     <head>
         <title>cart .</title>
-
+        <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     </head>
 
     <body>
-        <div class="checkout-header">
-            <div class="header-content">
-                <div class="checkout-header-left-section">
-                    <a href="html.html">
-                        <img class="logo" src="imgs/icons/logo.png">
-                    </a>
-                </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>      
+            
+            <div class="overlay-content">
+                <a href="#">new</a>
+                <a href="#">preowned</a>
+                <a href="html.html">home</a>
             </div>
+        </div>
+
+        <div class="menubtn">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav();">&#9776; ari.</span>
         </div>
     </body>
 
     <script type="module" src="js/checkout.js"></script>
+    <script src="js/open.js"></script>
 </html>
