@@ -21,24 +21,28 @@ export const products = [
     }, type: 'new',
     pricePence: 29500 
   }, {
+    id: "b83021jg-0hb3-2n79-k24l-j0j23ke842k3",
     image: 'imgs/rick-owens-pink-bolans.jpeg', name: 'rick  owens  pink  bolan  jeans', rating: {
       stars: 4.5,
       count: 78,
     }, type: 'new',
     pricePence: 68500
   }, {
+    id: "3njkh339-8379-bmb1-337h-39031nkjnhak",
     image: 'imgs/cdg-bomber.jpg', name: 'comme  des  garçons  homme  bomber  jacket', rating: {
       stars: 4.0,
       count: 17,
     }, type: 'new',
     pricePence: 76500
   }, {
+    id: "kjh39130-03j3-238j-kn32-093n17da897",
     image: 'imgs/rick-kiss-heels.jpg', name: 'rick  owens  kiss  heels', rating: {
       stars: 5.0,
       count: 191
     }, type: 'new',
     pricePence: 100000
   }, {
+    id: "9hkd6klj9-80hk-a2ul-03j1-08dmapdj921",
     image: 'imgs/maison-mihara.jpg', name: 'maison  mihara  yasuhiro', rating: {
       stars: 3.5,
       count: 122
