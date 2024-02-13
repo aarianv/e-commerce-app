@@ -36,7 +36,7 @@ export const products = [
     pricePence: 76500
   }, {
     id: "kjh39130-03j3-238j-kn32-093n17da897",
-    image: 'imgs/rick-kiss-heels.jpg', name: 'rick  owens  kiss  heels', rating: {
+    image: 'imgs/rick-kiss-heels.png', name: 'rick  owens  kiss  heels', rating: {
       stars: 5.0,
       count: 191
     }, type: 'new',
@@ -48,5 +48,19 @@ export const products = [
       count: 122
     }, type: 'new',
     pricePence: 31300
+  }, {
+    id: "8j9djal23-02j2-8ojn-97la-9h08jhkd786",
+    image: 'imgs/issey-miyake-dress.jpg', name: 'issey  miyake  pleats  please  snowdrop  dress', rating: {
+      stars: 3.0,
+      count: 28,
+    }, type: 'new',
+    pricePence: 62500
+  }, {
+    id:"00jd8kha9-08ja-kj8d-762n-7da455254sd5",
+    image: 'imgs/acne-leather-jacket.png', name: 'acne  studios  leather  jacket', rating: {
+      stars: 4.5,
+      count: 245
+    }, type: 'new',
+    pricePence: 150000
   }
 ];
