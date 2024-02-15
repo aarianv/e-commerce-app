@@ -30,7 +30,7 @@ cart.forEach((cartItem) => {
             ${matchingProduct.name}
           </div>
           <div class="product-price">
-            $${(matchingProduct.pricePence)/100}
+            $${(matchingProduct.pricePence/100).toFixed(2)}
           </div>
           <div class="product-quantity">
             <span>

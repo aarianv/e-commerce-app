@@ -1,5 +1,6 @@
 import {cart, addToCart} from '../datasets/cart.js';
 import {products} from '../datasets/products.js';
+import { formatMoney } from './utilities/money.js';
 
 let productsHTML = '';
 

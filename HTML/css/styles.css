@@ -66,21 +66,9 @@ html {
 
   .products-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
-  
-  @media (max-width: 2000px) {
-    .products-grid {
-      grid-template-columns: repeat(7, 1fr);
-    }
-  }
-  
-  @media (max-width: 1600px) {
-    .products-grid {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-  
+    
   @media (max-width: 1300px) {
     .products-grid {
       grid-template-columns: repeat(5, 1fr);
