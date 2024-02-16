@@ -9,7 +9,7 @@ products.forEach((product) => {
     <div class="product-container">
       <a href="item.html">
         <div class="product-image-container">
-          <img class="product-image" 
+          <img class="product-image" id="${product.id}"
           src="${product.image}">
         </div>
       </a>
@@ -72,3 +72,14 @@ document.querySelectorAll('.js-add-to-cart')
       console.log(cart)
     });
   });
+
+document.querySelectorAll('product-image-container')
+  .forEach((a) => {
+    product.addEventListener('click', () => {
+      const copyId = a.dataset.productId;
+    });
+  });
+
+export function refReturn(copyId){
+  copyId = copyId;
+}

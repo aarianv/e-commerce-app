@@ -1,9 +1,7 @@
 import {products} from '../datasets/products.js';
+import {refReturn} from './scripts.js';
 
-let itemHTML = '';
 
-itemHTML +=`
+refReturn(copyId) === newId;
+console.log(newId);
 
-`
-
-document.querySelector('#').innerHTML = itemHTML;
