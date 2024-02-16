@@ -7,10 +7,12 @@ let productsHTML = '';
 products.forEach((product) => {
   productsHTML += `
     <div class="product-container">
-      <div class="product-image-container">
-        <img class="product-image" 
-        src="${product.image}">
-      </div>
+      <a href="item.html">
+        <div class="product-image-container">
+          <img class="product-image" 
+          src="${product.image}">
+        </div>
+      </a>
 
       <div class="hide">
         <div class="product-name">
