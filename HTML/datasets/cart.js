@@ -51,3 +51,17 @@ export function removeFromCart(productId) {
 
   saveLocal();
 }
+
+export function UDT(productId, deliveryTypeId) {
+  let matchingItem;
+  
+  cart.forEach((cartItem) => {
+    if (productId === cartItem.productId) {
+      matchingItem = cartItem;
+    }
+  });
+
+  matchingItem.deliveryTypeId = deliveryTypeId;
+
+  saveLocal();
+}

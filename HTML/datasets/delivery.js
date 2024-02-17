@@ -11,3 +11,15 @@ export const deliveryTypes = [{
     deliveryTime: 1,
     pricePence: 999
 }];
+
+export function getDeliveryType(deliveryTypeId) {
+    let deliveryType;
+
+    deliveryTypes.forEach((type) => {
+      if (type.id === deliveryTypeId) {
+        deliveryType = type;
+      }
+    });
+
+    return deliveryType;
+}

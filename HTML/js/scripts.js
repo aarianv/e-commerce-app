@@ -28,7 +28,7 @@ products.forEach((product) => {
         </div>
 
         <div class="product-price">
-          $${formatMoney(product.pricePence)}
+          £${formatMoney(product.pricePence)}
         </div>
 
         <div class="product-quantity-container">
@@ -55,7 +55,7 @@ products.forEach((product) => {
 
         <button class="add-to-cart-button button-primary js-add-to-cart"
         data-product-id="${product.id}">
-          add to cart
+          ADD TO CART
         </button>
       </div>
     </div>
