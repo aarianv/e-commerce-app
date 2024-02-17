@@ -172,11 +172,4 @@ html {
     opacity: 0;
   }
 
-  .hide {
-    display: none;
-  }
-
-  .product-image-container:hover + .hide {
-    display: block;
-  }
 
