@@ -1,18 +1,19 @@
 import {cart, addToCart} from '../datasets/cart.js';
 import {products} from '../datasets/products.js';
 import {formatMoney} from './utilities/money.js';
+import {displayItem} from '../datasets/itemfinder.js';
 
 let productsHTML = '';
 
 products.forEach((product) => {
   productsHTML += `
     <div class="product-container">
-      <a href="item.html">
         <div class="product-image-container">
-          <img class="product-image" id="${product.id}"
-          src="${product.image}">
+          <button class="img-button js-img-button img-data-product-id"${product.id}>
+            <img class="product-image"
+            src="${product.image}">
+          </button>
         </div>
-      </a>
 
       <div class="hide">
         <div class="product-name">
@@ -48,11 +49,6 @@ products.forEach((product) => {
 
         <div class="product-spacer"></div>
 
-        <div class="added-to-cart">
-          <img src="imgs/icons/checkmark.png">
-          added
-        </div>
-
         <button class="add-to-cart-button button-primary js-add-to-cart"
         data-product-id="${product.id}">
           ADD TO CART
@@ -80,6 +76,11 @@ document.querySelectorAll('product-image-container')
     });
   });
 
-export function refReturn(copyId){
-  copyId = copyId;
-}
+document.querySelectorAll('.js-img-button')
+  .forEach((button) => {
+      button.addEventListener('click', () => {
+        const productId = button.dataset.productId;
+        displayItem(productId);
+        console.log(productId);
+      });
+  });

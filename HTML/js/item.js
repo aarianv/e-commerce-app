@@ -1,7 +1,12 @@
 import {products} from '../datasets/products.js';
-import {refReturn} from './scripts.js';
 
+products.Id = globalId;
 
-refReturn(copyId) === newId;
-console.log(newId);
+let itemHTML = '';
 
+itemHTML += `
+    <title>RSRV - ${products.id}</title>
+
+`
+
+document.querySelector('.js-item-container').innerHTML = itemHTML;
