@@ -9,7 +9,7 @@ products.forEach((product) => {
   productsHTML += `
     <div class="product-container">
         <div class="product-image-container">
-          <button class="img-button js-img-button img-data-product-id"${product.id}>
+          <button class="img-button js-img-button" data-product-id="${product.id}">
             <img class="product-image"
             src="${product.image}">
           </button>
@@ -82,5 +82,7 @@ document.querySelectorAll('.js-img-button')
         const productId = button.dataset.productId;
         displayItem(productId);
         console.log(productId);
+        list.push(productId);
       });
   });
+ 
