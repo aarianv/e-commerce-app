@@ -1,0 +1,35 @@
+.item-page-grid {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid rgb(222,222,222);
+}
+
+.large-image {
+    height: 100%;
+    width: 100%;
+}
+
+.item-product-name {
+    padding: 5px;
+}
+
+.stars-size {
+    padding: 5px;
+}
+
+.item-rating-count {
+    padding: 5px;
+}
+
+.item-description {
+    padding: 5px;
+}
+
+
+
