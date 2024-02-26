@@ -9,7 +9,7 @@ if (!cart) {
   }, {
     productId: 'h38969uj-9ed2-7h37-w46w-g3q73wd368a8',
     quantity: 1,
-    deliveryTypeId: '2'
+    deliveryTypeId: '3'
   }];
 }
 
@@ -17,7 +17,7 @@ function saveLocal() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-export function addToCart(productId) {
+export function addInBasket(productId) {
   let matchingItem;
   
   cart.forEach((cartItem) => {

@@ -1,4 +1,4 @@
-import {cart, addToCart} from '../datasets/cart.js';
+import {cart, addInBasket} from '../datasets/cart.js';
 import {products} from '../datasets/products.js';
 import {formatMoney} from './utilities/money.js';
 import {displayItem} from '../datasets/itemfinder.js';
@@ -32,7 +32,8 @@ products.forEach((product) => {
           £${formatMoney(product.pricePence)}
         </div>
 
-        <div class="product-quantity-container">
+        
+        <div class="product-quantity">
           <select>
             <option selected value="1">1</option>
             <option value="2">2</option>
@@ -49,7 +50,7 @@ products.forEach((product) => {
 
         <div class="product-spacer"></div>
 
-        <button class="add-to-cart-button button-primary js-add-to-cart"
+        <button class="add-to-cart-button button-primary js-add-in-basket"
         data-product-id="${product.id}">
           ADD TO CART
         </button>
@@ -60,11 +61,11 @@ products.forEach((product) => {
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
-document.querySelectorAll('.js-add-to-cart')
+document.querySelectorAll('.js-add-in-basket')
   .forEach((button) => {
     button.addEventListener('click', () => {
       const productId = button.dataset.productId;
-      addToCart(productId);
+      addInBasket(productId);
       console.log(cart)
     });
   });

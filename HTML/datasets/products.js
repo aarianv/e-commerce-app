@@ -13,7 +13,7 @@ export function getProduct(productId) {
 export function returnProduct(matchingProduct) {
   let productId;
 
-  products.forEach((matchingProduct) => {
+  products.forEach((product) => {
     if (product.id === matchingProduct) {
       productId = matchingProduct
     }
@@ -31,15 +31,19 @@ export const products = [
     }, type: 'new',
     pricePence: 95000, 
     description: "For over 30 years Maison Margiela's Tabi boots have been a signature of the label. " +
-                  "They're crafted from leather with the iconic split toe. " +
-                  "This pair have been updated for AW19 for a more pared-back aesthetic, while still sitting on the chunky, high heel."
+                 "They're crafted from leather with the iconic split toe. " +
+                 "This pair have been updated for AW19 for a more pared-back aesthetic, while still sitting on the chunky, high heel."
   }, {
     id: "h38969uj-9ed2-7h37-w46w-g3q73wd368a8" , 
     image: 'imgs/le-fleur-cardigan.jpg', name: 'LACOSTE X LE FLEUR STRIPED CARDIGAN', rating: {
       stars: 5.0,
       count: 38
     }, type: 'new',
-    pricePence: 50000
+    pricePence: 50000,
+    description: "Lacoste and Le FLEUR* first teamed up in 2019 for a capsule that debuted at The French Open. " +
+                 "Four years later, the creative duo dream up a new collection that fully realises their shared vision, " +
+                 "amalgamating Troyes-based brand’s athleisure aesthetic with Tyler, The Creator’s kaleidoscopic creations. " +
+                 "A case in point? This cable-knit cardigan spun to a relaxed fit from cosy cotton, embroidered with an iconic crocodile and accented with gleaming flower-shaped buttons."
   }, {
     id: "d66734wd-6dd4-3w97-v57w-g8z34nr335n2" , 
     image: 'imgs/1017-alyx-9sm-bracelet.png', name: '1017 ALYX 9SM BUCKLE BRACELET 34', rating: {

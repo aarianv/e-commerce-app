@@ -1,6 +1,7 @@
 import {getProduct, products, returnProduct} from '../datasets/products.js';
 import {list} from '../datasets/itemfinder.js';
 import {formatMoney} from './utilities/money.js';
+import {addInBasket} from '../datasets/cart.js';
 
 const productId = list[list.length-1];
 
@@ -40,7 +41,8 @@ itemHTML += `
 
             <div class="product-spacer"></div>
 
-            <div class="item-add-to-cart js-add-to-cart">
+            <div class="item-add-to-cart js-add-in-basket"
+             data-product-id="${matchingProduct.id}">
                 <button>ADD TO CART</button>
             </div>
         </div>
@@ -49,10 +51,13 @@ itemHTML += `
 
 document.querySelector('.js-item-container').innerHTML = itemHTML;
 
-document.querySelectorAll('.js-add-to-cart')
+document.querySelectorAll('.js-add-in-basket')
   .forEach((button) => {
     button.addEventListener('click', () => {
       const matchingProduct = button.dataset.matchingProduct;
-      addToCart(returnProduct(matchingProduct));
+      returnProduct(matchingProduct);
+      console.log(productId);
+      addInBasket(productId);
     });
   });
+
