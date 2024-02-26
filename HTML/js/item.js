@@ -2,6 +2,7 @@ import {getProduct, products, returnProduct} from '../datasets/products.js';
 import {list} from '../datasets/itemfinder.js';
 import {formatMoney} from './utilities/money.js';
 import {addInBasket} from '../datasets/cart.js';
+import {cart} from '../datasets/cart.js';
 
 const productId = list[list.length-1];
 
@@ -10,19 +11,11 @@ const matchingProduct = getProduct(productId)
 let itemHTML = '';
 
 itemHTML += `
-    <title>RSRV - ${matchingProduct.name}</title>
+    <title>${matchingProduct.name} - ARI</title>
 
     <div class="item-page-grid">
-        <div class="left-grid column">
-            <div class="item-product-image">
-                <img class="large-image" src="${matchingProduct.image}">
-            </div>
-        </div>
         
-        <div class="mid-grid column">
-            <div class="item-product-name">
-                ${matchingProduct.name}
-            </div>
+        <div class="left-grid column">
             <div class="item-stars">
                 <img class="stars-size" src="imgs/ratings/rating-${matchingProduct.rating.stars * 10}.png">
             </div>
@@ -34,16 +27,25 @@ itemHTML += `
             </div>
         </div>
 
-        <div class="right-grid column">
-            <div class="item-money"> 
-                £${formatMoney(matchingProduct.pricePence)}
+        <div class="mid-grid column">
+            <div class="item-product-image">
+                <img class="large-image" src="${matchingProduct.image}">
             </div>
+        </div>
 
-            <div class="product-spacer"></div>
+        <div class="right-grid column">
+            <div class="name-number">
+                <div class="item-product-name">
+                    ${matchingProduct.name}
+                </div>
+                <div class="item-money"> 
+                    £${formatMoney(matchingProduct.pricePence)}
+                </div>
+            </div>
 
             <div class="item-add-to-cart js-add-in-basket"
              data-product-id="${matchingProduct.id}">
-                <button>ADD TO CART</button>
+                <button class="basket-button">ADD TO CART</button>
             </div>
         </div>
     </div>

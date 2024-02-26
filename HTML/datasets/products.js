@@ -35,7 +35,8 @@ export const products = [
                  "This pair have been updated for AW19 for a more pared-back aesthetic, while still sitting on the chunky, high heel."
   }, {
     id: "h38969uj-9ed2-7h37-w46w-g3q73wd368a8" , 
-    image: 'imgs/le-fleur-cardigan.jpg', name: 'LACOSTE X LE FLEUR STRIPED CARDIGAN', rating: {
+    image: 'imgs/le-fleur-cardigan.jpg',
+    name: 'LACOSTE X LE FLEUR STRIPED CARDIGAN', rating: {
       stars: 5.0,
       count: 38
     }, type: 'new',
@@ -50,55 +51,70 @@ export const products = [
       stars: 4.0,
       count: 98
     }, type: 'new',
-    pricePence: 29500 
+    pricePence: 29500, 
+    description: "Rollercoaster-buckle detail bracelet from 1017 Alyx 9SM featuring silver-tone, " +
+                 "brass, cable-chain detail, engraved logo and Rollercoaster buckle fastening."
   }, {
     id: "b83021jg-0hb3-2n79-k24l-j0j23ke842kx3",
     image: 'imgs/rick-owens-pink-bolans.jpeg', name: 'RICK OWENS PINK BOLAN JEANS', rating: {
       stars: 4.5,
       count: 78,
     }, type: 'new',
-    pricePence: 68500
+    pricePence: 68500, 
+    description: "Slim-fit lacquered 16 oz stretch Okayama denim jeans."
   }, {
     id: "3njkh339-8379-bmb1-337h-39031nkjnhak",
     image: 'imgs/cdg-bomber.jpg', name: 'COMME DES GARÇONS HOMME BOMBER JACKET', rating: {
       stars: 4.0,
       count: 17,
     }, type: 'new',
-    pricePence: 76500
+    pricePence: 76500,
+    description: "Luxury."
   }, {
     id: "kjh39130-03j3-238j-kn32-093n17da897a",
     image: 'imgs/rick-kiss-heels.png', name: 'RICK OWENS KISS HEELS', rating: {
       stars: 5.0,
       count: 191
     }, type: 'new',
-    pricePence: 100000
+    pricePence: 100000,
+    description: "Rick Owens is known for his high-octane streetwear that plays with proportion, and the Paris-based designer applies the same approach to the creation of his shoes. " + 
+                 "Proof? The leather Kiss boots. Based on a classic Chelsea style but with the volume turned up, they sit on a towering stacked platform and heel. " + 
+                 "Pull them on with everything from draped maxi dresses to wide-legged trousers."
   }, {
     id: "9hkd6klj9-80hk-a2ul-03j1-08dmapdj92g",
     image: 'imgs/maison-mihara.jpg', name: 'MAISON MIHARA YASUHIRO', rating: {
       stars: 3.5,
       count: 122
     }, type: 'new',
-    pricePence: 31300
+    pricePence: 31300,
+    description: "Sneaker experts, Maison MIHARA YASUHIRO always go for the unconventional." +
+                 " The Original is given a vintage overhaul this season with a ‘melted’ silhouette on the low-top uppers." +
+                 " The OG showcases the old-school all-American sneaker in a different light, the stand out sole unit dominates the canvas uppers, with a vintage tinge."
   }, {
     id: "8j9djal23-02j2-8ojn-97la-9h08jhkd78w",
     image: 'imgs/issey-miyake-dress.jpg', name: 'ISSEY MIYAKE PLEATS PLEASE SNOWDROP DRESS', rating: {
       stars: 3.0,
       count: 28,
     }, type: 'new',
-    pricePence: 62500
+    pricePence: 62500, 
+    description: "This light grey pleated midi-dress has long, curved sleeves and a round neckline." +
+                 " As pattern of snowflakes is embossed on SNOWDROP, which has gentle curves at the cuffs."
   }, {
     id:"00jd8kha9-08ja-kj8d-762n-7da455254sdh",
     image: 'imgs/acne-leather-jacket.png', name: 'ACNE STUDIOS LEATHER JACKET', rating: {
       stars: 4.5,
       count: 245
     }, type: 'new',
-    pricePence: 150000
+    pricePence: 150000, 
+    description: "Acne Studios dark brown/black jacket is crafted from merino shearling and crackled finish leather. " +
+                 "Complete with zipper front closure and welt pockets. Cut to a relaxed fit and waist length."
   }, {
     id:"j3098j220-0o9a-8m2m-098l-802nlsdj809a",
     image: 'imgs/yohji-yamamoto-techno.jpg', name: 'YOHJI YAMAMOTO TECHNO PANTS', rating: {
       stars: 5.0,
       count: 248
     }, type: 'new',
-    pricePence: 28500
+    pricePence: 28500,
+    description: "Luxury."
   }
 ];

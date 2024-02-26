@@ -5,7 +5,7 @@ if (!list) {
 }
 
 export function displayItem(productId) {
-    window.open("item.html");
+    open("item.html");
 
     list.push(productId);
 
