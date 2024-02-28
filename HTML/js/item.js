@@ -1,8 +1,8 @@
 import {getProduct, products, returnProduct} from '../datasets/products.js';
 import {list} from '../datasets/itemfinder.js';
-import {formatMoney} from './utilities/money.js';
+import {moneyRounder} from './utilities/money.js';
 import {addInBasket} from '../datasets/cart.js';
-import {cart} from '../datasets/cart.js';
+import {basket} from '../datasets/cart.js';
 
 const productId = list[list.length-1];
 
@@ -39,7 +39,7 @@ itemHTML += `
                     ${matchingProduct.name}
                 </div>
                 <div class="item-money"> 
-                    £${formatMoney(matchingProduct.pricePence)}
+                    £${moneyRounder(matchingProduct.pricePence)}
                 </div>
             </div>
 

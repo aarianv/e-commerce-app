@@ -1,6 +1,5 @@
-import {cart, addInBasket} from '../datasets/cart.js';
 import {products} from '../datasets/products.js';
-import {formatMoney} from './utilities/money.js';
+import {moneyRounder} from './utilities/money.js';
 import {displayItem} from '../datasets/itemfinder.js';
 
 let productsHTML = '';
@@ -21,7 +20,7 @@ products.forEach((product) => {
         </div>
 
         <div class="product-price">
-          £${formatMoney(product.pricePence)}
+          £${moneyRounder(product.pricePence)}
         </div>
       </div>
     </div>
@@ -29,22 +28,6 @@ products.forEach((product) => {
 });
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
-
-document.querySelectorAll('.js-add-in-basket')
-  .forEach((button) => {
-    button.addEventListener('click', () => {
-      const productId = button.dataset.productId;
-      addInBasket(productId);
-      console.log(cart)
-    });
-  });
-
-document.querySelectorAll('product-image-container')
-  .forEach((a) => {
-    product.addEventListener('click', () => {
-      const copyId = a.dataset.productId;
-    });
-  });
 
 document.querySelectorAll('.js-img-button')
   .forEach((button) => {
@@ -55,4 +38,4 @@ document.querySelectorAll('.js-img-button')
         list.push(productId);
       });
   });
- 
+

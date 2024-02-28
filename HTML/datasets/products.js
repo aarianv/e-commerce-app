@@ -116,5 +116,14 @@ export const products = [
     }, type: 'new',
     pricePence: 28500,
     description: "Luxury."
+  }, {
+    id:"88j90h270-072o-87n3-9h30-bdiuayh329013",
+    image: 'imgs/doc-martens.jpg', name: 'DOC MARTEN BOOTS', rating: {
+      stars: 5.0,
+      count: 45
+    },
+    type: 'preowned',
+    pricePence: 6500,
+    description: "1460 Patent Leather Lace up Dr Marten Boots in Black. Lace up - almost new"
   }
 ];

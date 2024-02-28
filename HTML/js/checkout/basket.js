@@ -1,9 +1,9 @@
-import {cart, removeFromCart, UDT} from '../../datasets/cart.js';
+import {basket, removeFromCart, UDT} from '../../datasets/cart.js';
 import {products, getProduct} from '../../datasets/products.js';
-import {formatMoney} from '../utilities/money.js';
+import {moneyRounder} from '../utilities/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import {deliveryTypes, getDeliveryType} from '../../datasets/delivery.js';
-import {renderSystem} from './paymentSystem.js';
+import {renderSystem} from './summary.js';
 
 const today = dayjs();
 const deliveryDate = today.add(7, 'days');
@@ -13,12 +13,12 @@ console.log(deliveryDate.format('dddd, MMMM D').toLowerCase());
 
   let cartSummaryHTML = '';
 
-  cart.forEach((cartItem) => {
-    const productId = cartItem.productId;
+  basket.forEach((basketItem) => {
+    const productId = basketItem.productId;
 
     const matchingProduct = getProduct(productId);
 
-    const deliveryTypeId = cartItem.deliveryTypeId;
+    const deliveryTypeId = basketItem.deliveryTypeId;
 
     const deliveryType = getDeliveryType(deliveryTypeId);
 
@@ -47,11 +47,11 @@ console.log(deliveryDate.format('dddd, MMMM D').toLowerCase());
               ${matchingProduct.name}
             </div>
             <div class="product-price">
-              £${formatMoney(matchingProduct.pricePence)}
+              £${moneyRounder(matchingProduct.pricePence)}
             </div>
             <div class="product-quantity">
               <span>
-                QUANTITY: <span class="quantity-label">${cartItem.quantity}</span>
+                QUANTITY: <span class="quantity-label">${basketItem.quantity}</span>
               </span>
               <span class="update-quantity-link link-primary">
                 UPDATE
@@ -66,7 +66,7 @@ console.log(deliveryDate.format('dddd, MMMM D').toLowerCase());
             <div class="delivery-options-title">
               CHOOSE A DELIVERY OPTION:
             </div>
-            ${deliveryTypesHTML(matchingProduct, cartItem)}
+            ${deliveryTypesHTML(matchingProduct, basketItem)}
           </div>
         </div>
       </div>
@@ -334,7 +334,7 @@ console.log(deliveryDate.format('dddd, MMMM D').toLowerCase());
     `;
   });
 
-  function deliveryTypesHTML(matchingProduct, cartItem) {
+  function deliveryTypesHTML(matchingProduct, basketItem) {
     let html = '';
 
 
@@ -350,9 +350,9 @@ console.log(deliveryDate.format('dddd, MMMM D').toLowerCase());
 
       const priceString = deliveryType.pricePence === 0
         ? 'FREE'
-        : `£${formatMoney(deliveryType.pricePence)} -`; 
+        : `£${moneyRounder(deliveryType.pricePence)} -`; 
 
-        const isChecked = deliveryType.id === cartItem.deliveryTypeId;
+        const isChecked = deliveryType.id === basketItem.deliveryTypeId;
 
         html += `
         <div class="delivery-option js-delivery-type"
