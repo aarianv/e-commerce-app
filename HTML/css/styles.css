@@ -88,7 +88,8 @@ html {
     background-color: inherit;
   }
 
-  .products-grid {
+  .products-grid,
+  .item-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding-left: 10%;
@@ -96,31 +97,36 @@ html {
   }
     
   @media (max-width: 1300px) {
-    .products-grid {
+    .products-grid,
+    .item-container {
       grid-template-columns: repeat(5, 1fr);
     }
   }
   
   @media (max-width: 1000px) {
-    .products-grid {
+    .products-grid,
+    .item-container {
       grid-template-columns: repeat(4, 1fr);
     }
   }
   
   @media (max-width: 800px) {
-    .products-grid {
+    .products-grid,
+    .item-container {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
   @media (max-width: 575px) {
-    .products-grid {
+    .products-grid,
+    .item-container {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 450px) {
-    .products-grid {
+    .products-grid,
+    .item-container {
       grid-template-columns: 1fr;
     }
   }

@@ -5,8 +5,8 @@ import {displayItem} from '../datasets/itemfinder.js';
 let preownedHTML = '';
 
 products.forEach((product) =>  {
-  while (products.find(product => product.type === 'preowned')){
-    preownedHTML+= `
+  if (product.type === 'preowned') {
+    preownedHTML += `
       <div class="product-container">
         <div class="product-image-container">
           <button class="img-button js-img-button" data-product-id="${product.id}">
@@ -25,13 +25,11 @@ products.forEach((product) =>  {
           </div>
         </div>
       </div>
-    `
+    `;
   }
 });
 
-document.querySelectorAll('.js-preowned-products-grid')
-  .innerHTML = preownedHTML;
-
+document.querySelector('.js-preowned-products-grid').innerHTML = preownedHTML;
 
 document.querySelectorAll('.js-img-button')
     .forEach((button) => {

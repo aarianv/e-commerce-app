@@ -123,7 +123,26 @@ export const products = [
       count: 45
     },
     type: 'preowned',
-    pricePence: 6500,
+    pricePence: 65.00,
     description: "1460 Patent Leather Lace up Dr Marten Boots in Black. Lace up - almost new"
+  }, {
+    id:"uoen2e91219-793h-79da-7h2l-0hlk2yeh88o2",
+    image: 'imgs/cas-tee.jpg', name: 'CIGARETTES AFTER S*X TEE', rating: {
+      stars: 5.0,
+      count: 106
+    },
+    type: 'preowned',
+    pricePence: 1000,
+    description: "Official Merch Says Medium but I’d say fits more S/M"
+  }, {
+    id:"uoen2e91219-793h-79da-7h2l-0hlk2yeh88o2",
+    image: 'imgs/echo-hoodie.jpg', name: 'ECHO UNLIMITED HOODIE', rating: {
+      stars: 5.0,
+      count: 110
+    },
+    type: 'preowned',
+    pricePence: 3000,
+    description: "Echo Unlimited white graphic tattoo style hoodie sweater. Great for street y2k outfit and goes well with baggy cargos." +
+                 "Paint stains on parts of the hoodie."
   }
 ];
