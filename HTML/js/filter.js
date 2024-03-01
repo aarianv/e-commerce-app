@@ -4,7 +4,7 @@ export function filter(products){
     let filterArray = [];
 
     products.forEach((product) => {
-        if (!filterArray.includes(products.itemType)) {
+        if (!filterArray.includes(product.itemType)) {
             filterArray.push(product.itemType);
         }
     })
@@ -13,12 +13,12 @@ export function filter(products){
     filterArray.forEach((item) => {
             filterHTML += `
                 <div class="item-type">
-                    ${product.itemType}
+                    ${item}
                 </div>
             `
         }
         
-    )};
+    );
 
     document.querySelector('.js-item-filter').innerHTML = filterHTML;
-} 
+};

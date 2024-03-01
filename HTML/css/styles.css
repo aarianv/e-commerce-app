@@ -196,3 +196,7 @@ html {
     align-items: center;
     margin: 20px;
   }
+
+  .item-filter {
+    display: none;
+  }
