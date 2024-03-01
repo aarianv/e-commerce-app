@@ -82,7 +82,7 @@ export const products = [
                  "Pull them on with everything from draped maxi dresses to wide-legged trousers."
   }, {
     id: "9hkd6klj9-80hk-a2ul-03j1-08dmapdj92g",
-    image: 'imgs/maison-mihara.jpg', name: 'MAISON MIHARA YASUHIRO', rating: {
+    image: 'imgs/maison-mihara.jpg', name: 'MAISON MIHARA YASUHIRO SNEAKERS', rating: {
       stars: 3.5,
       count: 122
     }, type: 'new',

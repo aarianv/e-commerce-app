@@ -15,7 +15,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>      
             
             <div class="overlay-content">
-                <a href="#">NEW</a>
+                <a href="new.html">NEW</a>
                 <a href="preowned.html">PREOWNED</a>
                 <a href="cart.html">BASKET</a>
             </div>
@@ -25,8 +25,14 @@
             <span style="font-size:45px;cursor:pointer" onclick="openNav();">ARI</span>
         </div>
         
-
-        <div class="products-grid js-products-grid"></div>
+        <div class="search-container">
+            <input id="searchbar"
+                    onkeyup="search_item()"
+                    type="text" name="search"
+                    placeholder="SEARCH ITEMS...">
+            
+            <div class="products-grid js-products-grid"></div>
+        </div>
     </body>
 
     <script type="module" src="js/scripts.js"></script>
