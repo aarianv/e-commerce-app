@@ -1,29 +1,29 @@
-import {cart} from '../../datasets/cart.js'
 import {getProduct} from '../../datasets/products.js';
 import {getDeliveryType} from '../../datasets/delivery.js';
 import {formatMoney} from '../utilities/money.js';
+import {basket} from '../../datasets/cart.js';
 
 export function renderSystem() {
     let productPricePence = 0;
     let shippingCost = 0;
 
-    cart.forEach((cartItem) => {
-        const product = getProduct(cartItem.productId);
-        productPricePence += product.pricePence * cartItem.quantity;
+    basket.forEach((basketItem) => {
+        const product = getProduct(basketItem.productId);
+        productPricePence += product.pricePence * basketItem.quantity;
 
-        const deliveryType = getDeliveryType(cartItem.deliveryTypeId);
+        const deliveryType = getDeliveryType(basketItem.deliveryTypeId);
         shippingCost += deliveryType.pricePence;
     });
 
     const totalCost = productPricePence + shippingCost;
-
+    
     const paymentSystemHTML = `
         <div class="payment-summary-title">
             Order Summary
         </div>
 
          <div class="payment-summary-row">
-            <div>ITEMS (${cart.length}):</div>
+            <div>ITEMS (${basket.length}):</div>
             <div class="payment-summary-money">
                 £${formatMoney(productPricePence)}
             </div>

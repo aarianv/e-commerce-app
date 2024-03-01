@@ -1,6 +1,7 @@
 import {products} from '../datasets/products.js';
 import {moneyRounder} from './utilities/money.js';
 import {displayItem} from '../datasets/itemfinder.js';
+import {filter} from './filter.js';
 
 let productsHTML = '';
 
@@ -26,6 +27,8 @@ products.forEach((product) => {
     </div>
   `;
 });
+
+filter(products);
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
