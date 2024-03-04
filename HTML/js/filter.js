@@ -13,7 +13,9 @@ export function filter(products){
     filterArray.forEach((item) => {
             filterHTML += `
                 <div class="item-type">
-                    ${item}
+                    <button class="filter-button js-filter-button">
+                        ${item}
+                    </button>
                 </div>
             `
         }
@@ -21,4 +23,11 @@ export function filter(products){
     );
 
     document.querySelector('.js-item-filter').innerHTML = filterHTML;
+
+    document.querySelectorAll('.js-filter-button')
+        .forEach((button) => {
+            button.addEventListener('click', () => {
+                
+            })
+        })
 };
