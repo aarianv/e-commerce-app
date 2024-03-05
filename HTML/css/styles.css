@@ -5,17 +5,19 @@
 }
 
 .main-img {
-  width: 100%;
-  display: contents;
-  
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 0;
+}
+
+.large-img {
+  object-fit: cover;
+  width:fit-content;
+  height: auto;
+  vertical-align: middle;
 }
 
 .closebtn{border:none}
-
-.large-img {
-  max-width: 100%;
-  height: auto;
-}
 
 html {
     font-family: Arial, Helvetica, sans-serif;
