@@ -5,16 +5,13 @@
 }
 
 .main-img {
-  flex: 100%;
-  max-width: 100%;
-  padding: 0 0;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .large-img {
-  object-fit: cover;
-  width:fit-content;
-  height: auto;
-  vertical-align: middle;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .closebtn{border:none}
@@ -29,13 +26,13 @@ html {
 }
 
 .menubtn {
-  position: absolute;
-  top: 2%;
-  left: 16%;
+  position: fixed;
+  top: 5%;
+  left: 10%;
   font-family: kaisei-opti-regular;
   letter-spacing: -8px;
   font-size: 5em;
-  color: rgb(360, 360, 360);
+  color: #fff;
 }
 
 .overlay {
