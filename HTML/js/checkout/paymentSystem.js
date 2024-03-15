@@ -50,4 +50,11 @@ export function renderSystem() {
 
     document.querySelector('.js-payment-summary')
         .innerHTML = paymentSystemHTML;
+
+    document.querySelectorAll('.place-order-button')
+        .forEach((button) => {
+            button.addEventListener('click', () => {
+                open("checkout.html");
+            })
+        })
 }
