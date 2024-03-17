@@ -47,6 +47,12 @@ itemHTML += `
              data-product-id="${matchingProduct.id}">
                 <button class="basket-button">ADD TO CART</button>
             </div>
+
+            <div class="spacer"></div>
+
+            <div class="go-to-cart">
+                <a href="cart.html">CART</a>
+            </div>
         </div>
     </div>
 `

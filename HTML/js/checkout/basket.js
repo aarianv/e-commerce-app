@@ -5,7 +5,7 @@ import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import {deliveryTypes, getDeliveryType} from '../../datasets/delivery.js';
 import {renderSystem} from './summary.js';
 
- export function renderBasket() {
+export function renderBasket() {
 
   let cartSummaryHTML = '';
 

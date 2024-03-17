@@ -1,0 +1,22 @@
+form {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+div.spacer
+{
+    font-size: 0; 
+    height: 10px;
+    line-height: 0;
+}
+
+input {
+    padding: 5px;
+    margin: 10px;
+}
+
+select {
+    padding: 5px;
+    margin-top: 5px;
+}

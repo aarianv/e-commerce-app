@@ -43,9 +43,11 @@ export function renderSystem() {
             </div>
         </div>
 
-        <button class="place-order-button button-primary">
-            PLACE ORDER.
-        </button>
+        <a href="checkout.html">
+            <button class="place-order-button button-primary">
+                PLACE ORDER.
+            </button>
+        </a>
     `;
 
     document.querySelector('.js-payment-summary')
