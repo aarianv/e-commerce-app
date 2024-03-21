@@ -1,22 +1,22 @@
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+function revealNavigation() {
+    document.getElementById("overlayNav()").style.height = "100%";
 }
   
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+function shrinkNavigation() {
+    document.getElementById("overlayNav()").style.height = "0%";
 }
 
 function search_item() {
     let input = document.getElementById('searchbar').value
     input = input.toLowerCase();
-    let x = document.getElementsByClassName('product-container')
+    let product = document.getElementsByClassName('product-container')
 
-    for (i=0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
+    for (i=0; i < product.length; i++) {
+        if (!product[i].innerHTML.toLowerCase().includes(input)) {
+            product[i].style.display = "none";
         }
         else {
-            x[i].style.display = "list-item";
+            product[i].style.display = "list-item";
         }
     }
 }

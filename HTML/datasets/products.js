@@ -157,5 +157,55 @@ export const products = [
     description: "Echo Unlimited white graphic tattoo style hoodie sweater. Great for street y2k outfit and goes well with baggy cargos." +
                  "Paint stains on parts of the hoodie.",
     itemType: 'hoodies'
+  }, {
+    id:"973bv38090-749n-n382-f8a6-h279027u9827",
+    image: 'imgs/bewitched-laufey.jpg', name: "BEWITCHED: THE GODDESS EDITION - LAUFEY", rating: {
+      stars: 5.0,
+      count: 392
+    },
+    type: 'music',
+    pricePence: 2000,
+    description: "Bewitched: The Goddess Edition by Laufey on vinyl",
+    itemType: 'vinyl'
+  }, {
+    id:"4097oj8090-u47n-n9n2-fh46-3h39jahli80",
+    image: 'imgs/yeezus-ye.jpg', name: "YEEZUS - YE", rating: {
+      stars: 5.0,
+      count: 280
+    },
+    type: 'music',
+    pricePence: 2000,
+    description: "Yeezus by Ye on cd",
+    itemType: 'cd'
+  }, {
+    id:"2312h98ndid-h309-9i3j-p3j8-8902j3989da",
+    image: 'imgs/carti-carti.jpg', name: "PLAYBOI CARTI - PLAYBOI CARTI", rating: {
+      stars: 5.0,
+      count: 880
+    },
+    type: 'music',
+    pricePence: 2000,
+    description: "Playboi Carti by Playboi Carti on vinyl",
+    itemType: 'vinyl'
+  }, {
+    id:"2973hdua8aa-3u98-2jk3-92adpj-jad8927h23",
+    image: 'imgs/blonde-frank.jpg', name: "BLONDE - FRANK OCEAN", rating: {
+      stars: 5.0,
+      count: 1810
+    },
+    type: 'music',
+    pricePence: 2000,
+    description: "Blonde by Frank Ocean on vinyl",
+    itemType: 'vinyl'
+  }, {
+    id: "0801hj10381-kh83-89h3-78da-0823h0njlaka",
+    image: 'imgs/wolf-tyler.jpg', name: "WOLF - TYLER, THE CREATOR", rating: {
+       stars: 5.0,
+       count: 800
+    }, 
+    type: 'music',
+    pricePence: 2000,
+    description: "Wolf by Tyler, The Creator on vinyl",
+    itemType: 'vinyl' 
   }
-];
+]
